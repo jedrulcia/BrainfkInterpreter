@@ -1,0 +1,17 @@
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\bin\Debug\net8.0-windows\BrainfkInterpreter.exe
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\bin\Debug\net8.0-windows\BrainfkInterpreter.deps.json
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\bin\Debug\net8.0-windows\BrainfkInterpreter.runtimeconfig.json
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\bin\Debug\net8.0-windows\BrainfkInterpreter.dll
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\bin\Debug\net8.0-windows\BrainfkInterpreter.pdb
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\obj\Debug\net8.0-windows\BrainfkInterpreter.Form1.resources
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\obj\Debug\net8.0-windows\BrainfkInterpreter.csproj.GenerateResource.cache
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\obj\Debug\net8.0-windows\BrainfkInterpreter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\obj\Debug\net8.0-windows\BrainfkInterpreter.AssemblyInfoInputs.cache
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\obj\Debug\net8.0-windows\BrainfkInterpreter.AssemblyInfo.cs
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\obj\Debug\net8.0-windows\BrainfkInterpreter.csproj.CoreCompileInputs.cache
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\obj\Debug\net8.0-windows\BrainfkInterpreter.sourcelink.json
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\obj\Debug\net8.0-windows\BrainfkInterpreter.dll
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\obj\Debug\net8.0-windows\refint\BrainfkInterpreter.dll
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\obj\Debug\net8.0-windows\BrainfkInterpreter.pdb
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\obj\Debug\net8.0-windows\BrainfkInterpreter.genruntimeconfig.cache
+C:\Users\Jedrulcia\Desktop\Jedrzej\Programowanko\github\BrainfkInterpreter\obj\Debug\net8.0-windows\ref\BrainfkInterpreter.dll

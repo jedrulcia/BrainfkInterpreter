@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics;
+using System.Text;
 
 namespace BrainfkInterpreter
 {
@@ -7,6 +8,7 @@ namespace BrainfkInterpreter
 		public int[] Memory { get; private set; }
 		public int Pointer { get; private set; }
 		public StringBuilder Output { get; private set; }
+		private bool IsValid = true;
 
 		public Interpreter()
 		{
@@ -15,7 +17,7 @@ namespace BrainfkInterpreter
 			Output = new StringBuilder();
 		}
 
-		public void Execute(char command, string code, ref int instructionPointer)
+		void Execute(char command, string code, ref int instructionPointer)
 		{
 			switch (command)
 			{
@@ -35,17 +37,20 @@ namespace BrainfkInterpreter
 					Output.Append((char)Memory[Pointer]);
 					break;
 				case ',':
-					Memory[Pointer] = Console.Read(); // Wczytanie jednego znaku
+					Memory[Pointer] = Console.Read();
 					break;
 				case '[':
 					if (Memory[Pointer] == 0)
 					{
-						// Skocz na koniec pętli
 						int loop = 1;
 						while (loop > 0)
 						{
 							instructionPointer++;
-							if (instructionPointer >= code.Length) throw new Exception("Brakujący ']'.");
+							if (instructionPointer >= code.Length)
+							{
+								IsValid = false;
+								return;
+							}
 							if (code[instructionPointer] == '[') loop++;
 							if (code[instructionPointer] == ']') loop--;
 						}
@@ -54,12 +59,15 @@ namespace BrainfkInterpreter
 				case ']':
 					if (Memory[Pointer] != 0)
 					{
-						// Skocz na początek pętli
 						int loop = 1;
 						while (loop > 0)
 						{
 							instructionPointer--;
-							if (instructionPointer < 0) throw new Exception("Brakujący '['.");
+							if (instructionPointer < 0)
+							{
+								IsValid = false;
+								return;
+							}
 							if (code[instructionPointer] == '[') loop--;
 							if (code[instructionPointer] == ']') loop++;
 						}
@@ -68,18 +76,32 @@ namespace BrainfkInterpreter
 			}
 		}
 
-		public void Run(string code)
+		public (string text, bool isValid) Run(string code)
 		{
 			Output.Clear();
+			IsValid = true;
 			int instructionPointer = 0;
+
+			Stopwatch stopwatch = new Stopwatch();
+			stopwatch.Start();
 
 			while (instructionPointer < code.Length)
 			{
 				Execute(code[instructionPointer], code, ref instructionPointer);
 				instructionPointer++;
+
+				if (stopwatch.Elapsed.TotalSeconds > 5)
+				{
+					return ("", false);
+				}
 			}
 
-			Console.WriteLine(Output.ToString());
+			if (Output.ToString().Length == 0)
+			{
+				IsValid = false;
+			}
+
+			return (Output.ToString(), IsValid);
 		}
 	}
 }
