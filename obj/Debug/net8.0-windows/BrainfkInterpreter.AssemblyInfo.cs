@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrainfkInterpreter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ee1fc6c94492c01bd8624e522ffe14b4d79d949")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a02c35a82e0e410e5bebfbfaa2b23692627e1d9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BrainfkInterpreter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrainfkInterpreter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
