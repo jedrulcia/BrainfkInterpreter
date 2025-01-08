@@ -1,8 +1,9 @@
+using System.Runtime.InteropServices;
+
 namespace BrainfkInterpreter
 {
 	public partial class Form1 : Form
 	{
-
 		private Label brainfkLabel = new Label();
 		private TextBox brainfkTextBox = new TextBox();
 		private Button brainfkButton = new Button();
